@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Team Buzzer — ผู้เล่น</title><link rel="stylesheet" href="/style.css"></head>
+<body class="player-page"><main class="app-shell">
+<header class="hero"><div class="hero-mark">⚡</div><div class="eyebrow">TEAM BUILDING · LIVE GAME</div><h1>TEAM <span>BUZZER</span></h1><p>ศึกชิงแต้ม 8 อุปนิสัย · ใครกดก่อน ได้ตอบก่อน!</p></header>
+<section id="join" class="panel join-panel"><h2>✨ เข้าสู่เกม</h2><label for="playerName">ชื่อของคุณ</label><input id="playerName" maxlength="40" placeholder="กรอกชื่อเล่นของคุณ" autocomplete="name">
+<label>เลือกทีมที่คุณสังกัด</label><div id="teamChoices" class="teams"></div><button id="joinBtn" class="primary full" disabled>เข้าสู่เกม <span>→</span></button><p id="joinError" class="error"></p></section>
+<section id="play" class="panel play-panel hidden"><div class="statusline"><span id="myTeam" class="player-tag"></span><span id="roundLabel" class="pill"></span></div><div id="playStatus" class="notice">กำลังรอพิธีกรเปิดรอบ…</div><button id="buzzBtn" class="buzz" disabled><span class="buzz-light">⚡</span><strong>กดชิงตอบ!</strong><small>BUZZ NOW</small></button><p class="muted center">เมื่อมีคนกดคนแรก ระบบจะล็อกปุ่มของทุกคนทันที</p><a class="admin-link" href="/admin.html">🎛️ สำหรับ Admin / พิธีกร</a></section>
+<section class="panel score-panel"><div class="section-heading"><h2>🏆 ตารางคะแนน</h2><span class="live-dot">LIVE</span></div><div id="scoreboard" class="scoreboard"></div></section>
+<footer>TEAM BUZZER · เล่นพร้อมกันแบบเรียลไทม์</footer></main><script src="/socket.io/socket.io.js"></script><script src="/app.js"></script></body></html>
